@@ -1,0 +1,94 @@
+/* ====== Header Wrapper ====== */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0;
+    background-color: transparent;
+    /* Or rgba(0,0,0,0.4) with blur if needed */
+    /* Optional for blur effect:
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    */
+}
+
+/* ====== Container for Header Only ====== */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ====== Logo Area ====== */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 48px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 30px;
+    color: #FEA116;
+}
+
+/* ====== Navbar Navigation ====== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 48px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FEA116;
+}
+
+/* ====== Book Button ====== */
+.book-btn {
+    background: #FEA116;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: auto;
+}
+
+.book-btn:hover {
+    background: #e89d0f;
+}

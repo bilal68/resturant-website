@@ -1,0 +1,24 @@
+/* Global Layout */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-inner {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}

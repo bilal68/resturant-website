@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Section Style */
+.section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* First Section - This includes both the header and the main content */
+.first-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust height as necessary */
+    background: linear-gradient(to right, rgba(0, 0, 0, -7.15), rgba(0, 0, 0, -7.15)), linear-gradient(#0F172BE5, #0F172BE5), url('./assets/images/bg-hero 1.png') center / cover no-repeat;
+    background-size: cover;
+    color: blue; /* Text color to contrast with background */
+}
+
+.first-section .header {
+    padding: 40px;
+    text-align: center;
+}
+
+.first-section .content {
+    padding: 20px;
+    text-align: center;
+    color: green;
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: red;
+}
+
+.about {
+    background-color: #E0FFEC;
+}
+
+.footer {
+    background-color: #FFF1D0;
+}
+
+/* Padding and Margin Visuals */
+.section::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+/* Styling for Headers */
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Margin Between Sections */
+.section + .section {
+    margin-top: 40px;
+}

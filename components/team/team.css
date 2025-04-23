@@ -1,0 +1,110 @@
+/* Section Titles */
+.team-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.team-wrapper h3 {
+    font-size: 24px;
+    color: #888;
+    margin-top: 8px;
+}
+
+.team-subtitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #FEA116;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.team-subtitle .hyphen {
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background-color: #FEA116;
+    vertical-align: middle;
+}
+
+/* Flex Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* space between cards */
+}
+
+/* Card Style */
+.chef-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Wrapper */
+.chef-img-wrapper {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+}
+
+.chef-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text below image */
+.chef-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 4px;
+    color: #0F172B;
+}
+
+.chef-role {
+    font-size: 14px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    overflow: hidden;
+    background-color: #0F172B;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #d4a762;
+}

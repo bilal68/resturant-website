@@ -1,0 +1,83 @@
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background: #FEA116;
+    width: 263px;
+    height: 256px;
+    border-radius: 2px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-card:first-child {
+    background-color: #FEA116;
+    color: #FFFFFF;
+}
+
+.service-card:first-child svg {
+    fill: #FFFFFF;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.service-card:first-child h1 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.service-card:first-child p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.service-card:not(:first-child) {
+    background-color: #FFFFFF;
+    color: #666565;
+    box-shadow: 0px 0px 45px 0px #00000014;
+}
+
+.service-card:not(:first-child) svg {
+    fill: #FEA116;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.service-card:not(:first-child) h1 {
+    color: #0F172B;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.service-card:not(:first-child) p {
+    color: #666565;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
