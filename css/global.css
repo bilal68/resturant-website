@@ -1,4 +1,4 @@
-/* Global Layout */
+/* Global Layout
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -12,8 +12,6 @@ body {
 }
 
 .section-inner {
-    padding-left: 4vw;
-    padding-right: 4vw;
     box-sizing: border-box;
 }
 
@@ -21,4 +19,65 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-}
+    padding: 0 1rem;
+} */
+
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* ===== Layout Containers ===== */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  .section {
+    padding: 5rem 0;
+  }
+  
+  .section-inner {
+    width: 100%;
+  }
+  
+  /* ===== Header & Footer ===== */
+  header, footer {
+    width: 100%;
+    background-color: #272F41;
+    color: #fff;
+  }
+  
+  header .container,
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #FEA116;
+  }
+  

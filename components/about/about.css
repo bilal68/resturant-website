@@ -1,10 +1,8 @@
 .about-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 40px 0;
-
 }
 
 .about-images {
@@ -12,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
+    gap: 20px;
     position: relative;
 }
 
@@ -22,38 +20,30 @@
     border-radius: 2px;
 }
 
+/* Image placements */
 .about-images img:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1;
     justify-self: end;
     align-self: end;
 }
 
 .about-images img:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: start;
-    align-self: end;
     width: 203.27px;
     height: 203.1px;
+    justify-self: start;
+    align-self: end;
 }
 
 .about-images img:nth-child(3) {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: end;
-    align-self: start;
     width: 203.27px;
     height: 203.1px;
+    justify-self: end;
+    align-self: start;
 }
 
 .about-images img:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2;
     justify-self: start;
     align-self: start;
 }
-
 
 .about-content {
     flex: 1;
@@ -64,17 +54,19 @@
     font-family: 'Pacifico', cursive;
     font-size: 20px;
     color: #FEA116;
+    position: relative;
 }
 
 .about-content .pacifico-text::after {
-    content: ''; 
-    width: 50px; 
-    height: 2px; 
-    background: #FEA116; 
-    display: inline-block; 
-    margin-left: 10px; 
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #FEA116;
+    display: inline-block;
+    margin-left: 10px;
     vertical-align: middle;
 }
+
 .about-content .about-title {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -133,8 +125,6 @@
     color: #FFFFFF;
     border: 1px solid #FEA116;
     border-radius: 2px;
-    width: 187.49px;
-    height: 56.1px;
     padding: 16px 48px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -146,6 +136,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+    height: auto;
 }
 
 .read-more:hover {

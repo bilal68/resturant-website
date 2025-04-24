@@ -39,7 +39,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    /* space between cards */
 }
 
 /* Card Style */
@@ -49,12 +48,17 @@
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+    max-width: 250px;
+    /* height: 300px; */
+    position: relative;
+    overflow: hidden;
 }
 
 .chef-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    height: 300px;
 }
 
 /* Image Wrapper */
@@ -64,6 +68,11 @@
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 16px;
+    transition: transform 0.3s ease;
+}
+
+.chef-card:hover .chef-img-wrapper {
+    transform: scale(1.1);
 }
 
 .chef-img-wrapper img {
@@ -72,7 +81,6 @@
     object-fit: cover;
 }
 
-/* Text below image */
 .chef-name {
     font-size: 18px;
     font-weight: bold;
@@ -90,6 +98,15 @@
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+}
+
+.chef-card:hover .social-icons {
+    opacity: 1;
 }
 
 .social-icons a {
@@ -101,10 +118,17 @@
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
     overflow: hidden;
-    background-color: #0F172B;
-    transition: background-color 0.3s ease;
+    background-color: #e89d0f;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons a:hover {
-    background-color: #d4a762;
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .chef-card {
+        width: 100%;
+    }
 }
