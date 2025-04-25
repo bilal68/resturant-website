@@ -3,8 +3,10 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('../../assets/images/bg-hero 1.png') center / cover no-repeat;
     color: white;
-    min-height: 100vh;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* ====== Flex Container for Hero Content & Image ====== */
@@ -19,7 +21,7 @@
 /* ====== Hero Text Content ====== */
 .hero-content {
     flex: 1;
-    max-width: 574px;
+    max-width: 50%;
 }
 
 .hero-content h1 {
@@ -62,8 +64,21 @@
 /* ====== Hero Image Container ====== */
 .hero-image {
     flex: 1;
+    max-width: 50%;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+}
+
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .hero-image img {
@@ -72,4 +87,30 @@
     display: block;
     object-fit: cover;
     border-radius: 10px;
+    animation: rotateImage 30s linear infinite;
+    transform-origin: center;
+
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-flex {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        max-width: 100%; 
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem; 
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 1.5rem; 
+    }
 }
